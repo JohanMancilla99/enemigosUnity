@@ -30,6 +30,11 @@ public class MovimientoJugador : MonoBehaviour
         {
             rig.AddForce(transform.up * moveUp, ForceMode.VelocityChange);
         }
+
+        if(Input.GetKey(KeyCode.R))
+        {
+            transform.position = new Vector3(0f, 0f, 0f);
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
